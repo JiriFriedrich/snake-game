@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake game</title>
+  </head>
+  <body>
+    <h1>Snake game</h1>
+    <canvas id="canvas" width="700" height="500"></canvas>
+    <p>Version: 1.0</p>
+    <p>Use WASD keys to move.</p>
+    <p>The app is written in typescript.</p>
+    <script src="app.js"></script>
+    <script>
+      window.onload = function () {
+        var game = Snake.SnakeWeb('canvas')
+        game.start()
+      }
+    </script>
+  </body>
+</html>
